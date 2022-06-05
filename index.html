@@ -1,1 +1,73 @@
-test du repository
+<!DOCTYPE html:5>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" type="icone/png" href="image/icone.png" />
+	<meta name="viewport" content="width, initial-scale=1.0" />
+	<title> CV </title>
+	<link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+  <body>
+    <header>
+      <a href="" class="brand">Accueil</a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+				 <a href="plus.html"> Vos questions </a>
+		     <a href="shop.html"> Produits </a>
+			   <a href="lien.html"> Liens </a>
+				 <a href="actuality.html"> Actualité </a>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+    <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+    </script>
+
+		<section class="page">
+
+		<li>Ergonomique, Léger, Esthétique,</li>
+
+
+		</section>
+
+
+
+
+
+
+		<strong>Informations</strong><section class="trait_infos"></section><br>
+
+		<strong>Qui est derrière ce projet ? </strong><section class="trait_infos"></section><br>
+
+		 </body>
+
+
+		<footer>
+
+		<p class="copyright">&copy; 2021 - Louis Lepage </p>
+
+		</footer>
+
+</html>
